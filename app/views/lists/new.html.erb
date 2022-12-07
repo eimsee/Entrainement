@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="text-center mt-4 mb-4">
+    <h1>CRÉEZ UNE NOUVELLE LISTE</h1>
+  </div>
+<div class="row justify-content-around">
+  <div class="card-center" style="width: 18rem;">
+    <ul class="list-group list-group-flush">
+      <%= simple_form_for(@list) do |f| %>
+      <%= f.input :name, label: "NOM" %>
+      <%= f.submit "Validez" %>
+    </ul>
+  </div>
+</div>
+<% end %>
+</div>

@@ -1,2 +1,30 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<%# <h1>Pages#home</h1>
+<p>Find me in app/views/pages/home.html.erb</p> %>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://img.freepik.com/photos-gratuite/assortiment-elements-cinema-fond-rouge-espace-copie_23-2148457848.jpg?w=2000);">
+  <div class="container">
+    <h1>SINGLE<strong>MOVIE</h1>
+    <p>Partagez vos préférences</p>
+    <%= link_to "Mes listes", lists_path, class: "btn btn-flat" %>
+    <%= link_to "Nouvelle liste", new_list_path, class: "btn btn-flat-bis" %>
+  </div>
+</div>
+<div class="container">
+  <div class="container d-flex justify-content-center text-center mt-5">
+    <div>
+      <h3>LISTES LES MIEUX NOTÉES:</h3>
+    </div>
+  </div>
+  <div class="cards">
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://cafe-netflix.info/wp-content/uploads/2020/04/Warriors-of-Future.jpg)">
+      ACTION
+    </div>
+
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://leclaireur.fnac.com/wp-content/uploads/2022/10/science-fiction-genre-livres-audio.jpg)">
+      SCIENCES FICTION
+    </div>
+
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://resize.elle.fr/original/var/plain_site/storage/images/loisirs/cinema/dossiers/film-comedie/64204003-1-fre-FR/Top-10-des-meilleurs-films-de-comedies-francaises.jpg)">
+      COMÉDIE
+    </div>
+  </div>
+</div>
