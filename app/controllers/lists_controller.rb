@@ -38,8 +38,8 @@ class ListsController < ApplicationController
     @list = List.find(params[:id])
   end
 
-  def movie_params
-    params.require(:movie).permit(:title, :overview, :poster_url, :rating)
+  def list_params
+    params.require(:list).permit(:name)
   end
 
 end
